@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: ;
+    --secondary:#ff0000;
+    --padding-inline:20px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--primary);
+}
+h1{
+    font-size: 3rem;
+    display: inline;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-family:Roboto,sans-serif;
+    font-size: 1.25rem;
+    /* color: var(--secondary); */
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+/* utility classes */
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;  /*mergin from left and right  */
+    padding-inline: var(--padding-inline);
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.hover-links {
+    color: var(--primary);
+    transition: 0.2s ease-out;
+}
+.hover-links:hover{
+    color: var(--accent);
+}
+.primary-button{
+    background-color: var(--accent);
+    border-radius: 6px;
+    font-weight: 700;
+    color: #fff !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary);
+    transition: 0.2s ease-out;
+    text-align: center;
+}
+.primary-button:hover{
+    background-color: var(--accent-dark);
+}
+.secondary-button{
+    border: 0.5px solid var(--secondary);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.secondary-button:hover{
+    border-color: var(--accent);
+    color: var(--accent) !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+    /* min-width means it can go to that size not less than it  */
+}
+@media screen and (max-width: 767px) {
+    /* max-width means it cant expend more than specified size  */
+}
+@media screen and (max-width: 479px) {
+    /* max-width means it cant expend more than specified size  */
+}
