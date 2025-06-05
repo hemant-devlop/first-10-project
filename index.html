@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo app</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <h1 class="logo">Hemant</h1>
+        <ul class="nav-items">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">Tasks</li>
+          <li class="nav-item">Help</li>
+        </ul>
+      </nav>
+      <div class="headline">
+        <h2 id="main-heading">
+          Manage your task <span style="display: none">Hello</span>
+        </h2>
+        <button class="btn btn-headline">learn More</button>
+      </div> 
+    </header>
+    <!-- header end -->
+    <section class="section-todo container">
+      <h2>Your plan for today ?</h2>
+      <!-- todo form -->
+      <form class="form-todo">
+        <input type="text" placeholder="Add Todo" />
+        <input type="submit" value="Add" class="btn" />
+      </form>
+      <span class="error">Please input your today task!!!</span>
+      <ul class="todo-list">
+        <li>
+          <span class="text">do this do that </span>
+          <div class="todo-buttons">
+            <button class="todo-btn done">Done</button>
+            <button class="todo-btn remove">Remove</button>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <!-- todo app end  -->
+    <footer>
+     <div>
+      <span>connect with me <a href="https://www.linkedin.com/in/realhemantkumar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        title="Linkdn profile">Hemant kumar</a></span>
+     </div>
+    </footer>
+    <script src="./index.js" defer></script>
+  </body>
+</html>
